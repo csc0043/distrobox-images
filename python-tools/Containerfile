@@ -1,0 +1,5 @@
+FROM registry.fedoraproject.org/fedora-toolbox:latest
+RUN dnf upgrade -y
+RUN dnf install python3-notebook
+# If some day it turns to be too long, rather use a text file to specify pkgs
+# RUN dnf install $(cat packages.txt) -y

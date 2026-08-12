@@ -1,0 +1,4 @@
+FROM registry.fedoraproject.org/fedora-toolbox:latest
+RUN dnf -y upgrade
+RUN dnf -y copr enable ecomaikgolf/typst
+RUN dnf -y install typst tinymist
